@@ -124,7 +124,43 @@ function Guess(event)
     {        
         var audio = document.getElementById("audio");
         audio.play();
-        event.target.src = './Images/Bomb.png';//This can change the image
+
+
+        var Ran = Math.floor(Math.random()*10);
+        switch (Ran)
+        {
+            case 0:
+                event.target.src = './Images/0.png';//This can change the image
+                break;
+            case 1:
+                event.target.src = './Images/1.png';//This can change the image
+                break;
+            case 2:
+                event.target.src = './Images/2.png';//This can change the image
+                break;
+            case 3:
+                event.target.src = './Images/3.png';//This can change the image
+                break;
+            case 4:
+                event.target.src = './Images/4.png';//This can change the image
+                break;
+            case 5:
+                event.target.src = './Images/5.png';//This can change the image
+                break;
+            case 6:
+                event.target.src = './Images/6.png';//This can change the image
+                break;
+            case 7:
+                event.target.src = './Images/7.png';//This can change the image
+                break;
+            case 8:
+                event.target.src = './Images/8.png';//This can change the image
+            break;
+            case 9:   
+            event.target.src = './Images/Bomb.png';//This can change the image
+                break;                                     
+        }
+
         event.target.id = "Clear";
         //targetId = event.target.id;
         //console.log(targetId);
